@@ -618,9 +618,35 @@ main{
         display: none;
     }
     .main-text-heading{
-        margin-top: 43vh;
+        margin-top: 33vh;
         text-align: center;
     }
+    .main-text-heading h1{
+        font-family: Reckless;
+    }
+    .section2-heading h1{
+        font-family: Reckless;
+    }
+    .section3-btns button{
+        width: fit-content;
+        font-size:larger;
+    }
+    .section5 {
+    height: 90vh;
+    }
+
+    .section7 .sectiion3-part1-inner button{
+        width: fit-content;
+        padding: 0 0.3rem;
+    }
+
+    .section7-part2 {
+    margin-top: 6rem;
+    background-color: #ffcb96;
+    height: 75vh;
+}
+
+
 }
 @media screen and (min-width:720px) {    /* Tablet*/
     .card{
