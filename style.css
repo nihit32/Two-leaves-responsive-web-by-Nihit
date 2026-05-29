@@ -1,0 +1,1004 @@
+:root{
+    --bg_color: #fbf9eb;
+    --btn_color: #2a2857;
+    --btn_drop_color: #c0dbff;
+    --btn_purp_color: #daaeea;
+    --green_color:#c1ee91;
+    --skin_color:#ffd884;
+    --green_blue_mix: #b0e8c1;
+    --light_color:#c1e4f8;
+    --orange-color:#ff7f31;
+    --pink-color:#f5af8a;
+    --dark-pink-color:#ea6d44;
+}
+@font-face {
+    font-family: Reckless;
+    src: url(fonts/RecklessCondensedS-TRIAL-Book.woff);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/RobotoMono-Regular.ttf);
+}
+@font-face {
+    font-family: Figtree;
+    src: url(fonts/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2);
+}
+@font-face {
+    font-family: Midnight;
+    src: url(fonts/midnight-sans-rd-12-medium-trial.otf);
+}
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+      background-color: var(--bg_color);
+}
+
+/* ==================HEADER======================= */
+
+.main{
+   
+     width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg_color);
+}
+.offer-text{
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 600;
+    background-color: var(--btn_color);
+    color: white;
+    padding: 0.4rem 0rem;
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+}
+
+/* =================== main section========================== */
+main{
+    height: 100%;
+    background-image: url(AlpineBerry\ background\ banner.webp);
+    background-size: cover;
+    background-position: 90% 50%;
+}
+ .nav{
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 10px;
+        background-color: var(--bg_color);
+        width: 95%;
+        margin: 1rem auto;
+         position: sticky;
+    top: 1rem;
+    z-index: 999;
+    }
+    .mob {
+        font-size: 1.6rem;
+    }
+
+    .main-text-heading{
+        margin-top: 33vh;
+        /* text-align: center; */
+        color: white;
+        padding:1rem;
+    }
+    .main-text-heading h1{
+        font-family: Reckless;
+        font-size: clamp(1rem, 12vh , 4rem);
+        line-height: 70px;
+    }
+    .main-text-heading p{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .main-text-heading button{
+        padding: 0.51rem;
+        border-radius: 50px;
+        background-color: var(--btn_color);
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    .part3{
+        align-items: center;
+        gap: 1rem;
+    }
+    .part3 .lap{
+        font-weight: 600;
+    }
+    
+    .part1 .lap{
+        font-size: 1.2rem;
+        font-family: Reckless;
+    }
+    .lap i {
+        border: 1px solid black;
+        border-radius: 50px;
+        background-color: #ffb500;
+    }
+
+    .section2{
+        padding: 20px;
+       
+        min-height: 100vh;
+        margin-bottom: 3rem;
+    }
+    .section2-heading{
+        width: 90%;
+        margin: 2rem auto;
+        font-size: clamp(2rem,4vw, 5rem);
+        font-family: Reckless;
+        text-align: center;
+    }
+    
+    .section2-btn-seller button{
+        font-size: clamp(1.5rem, 5vw, 2rem);   
+        background-color: var(--btn_purp_color);
+        color:black;
+        padding: 0.2rem 0.4rem;
+        border: 1px solid black;
+        border-radius: 5px;
+        transform: rotate(-5deg);
+        display: flex;
+         font-family: Midnight;
+    }
+    .seller-btn{
+        font-weight: 900;
+    }
+    /* ====================== cards============================= */
+
+    .card-container{
+        width: 100%;
+        height: 100%;
+        padding: 2rem 0;
+       display: flex;
+       overflow-x: auto;
+       margin-top: 2rem;
+    }
+    .card{
+        width: 90%;
+         flex-shrink: 0;
+    }
+    .card-top{
+        width: 90%;
+        height: 45vh;
+        background-color: var(--green_color);
+        position: relative;
+        padding: 1rem; 
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: space-between;
+
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .top-ratting-text{
+        width: 100%;
+        display: flex;
+        justify-content: space-between !important;
+    }
+    .top-ratting-text button{
+        background-color: var(--bg_color);
+        padding: 0.3rem;
+        border: 1px solid black;
+        border-radius: 5px;
+        font-family: Roboto;
+        font-weight: 800;
+    }
+    .btn-addtocart{
+        text-align: center;
+        background-color: var(--bg_color);
+        padding: 0.3rem 0.5rem;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    .card-top img{
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+    }
+    .card-bottom{
+        display: flex;
+        flex-direction: column;
+        gap:0.35rem;
+    }
+    .card-bottom h1{
+        font-size: clamp(2rem,5vw,2rem);
+        font-family: Reckless;
+    }
+    .card-bottom p{
+        width: 90%;
+        color: rgb(79, 79, 79);
+    }
+    .exploreallteas-btn{
+        margin-top: 3.5rem;
+    }
+    .exploreallteas-btn button{
+        width: 50%;
+        padding: 0.8rem;
+        background-color: var(--btn_color);
+        color: white;
+        border-radius: 50px;
+    }
+
+/* ================= SECTION 3 ======================= */
+.section3{
+    margin-top: 3rem;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+.sectiion3-part1-inner{
+    padding: 1rem;
+}
+.sectiion3-part1-inner button{
+    padding: 0rem 0.1rem;
+    background-color: var(--orange-color);
+    font-family: Midnight;
+    font-weight: 700;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    transform: rotate(-5deg);
+
+}
+
+.sectiion3-part1-inner h1{
+    margin-top: 1rem;
+    width: 90%;
+    font-family: Reckless;
+    font-size: clamp(1.5rem,5vw,4rem);
+    line-height: 2rem;
+}
+
+.sectiion3-part1-inner input{
+    margin-top: 2rem;
+    border: 1px solid black;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+.sectiion3-part2{
+    padding: 1rem;
+}
+.section3-btns button{
+    padding: 0.5rem;
+    background-color: #daeaff;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.9rem;
+    font-family: Reckless;
+    margin-top: 0.4rem; 
+    
+}
+/* ====================== SECTION 4 =================== */
+.section4{
+    width: 100%;
+   height: 110vh;
+    background-image: url(forest\ img.webp);
+    color: white;
+}
+.section4-part1 button{
+    
+    background-color: #a2c9fc;
+    color:  black;
+    width: fit-content;
+    margin: 7rem auto;
+    padding: 0 1rem;
+    border: 1px solid black;
+    font-weight: 900;
+    border-radius: 5px;
+    font-size: clamp(2rem, 5vw, 3rem);
+    transform: rotate(-3deg);
+    font-family: Midnight;
+}
+.section4 h1{
+    margin: 0 auto;
+    color: var(--bg_color);
+    font-size: clamp(3rem, 7vw, 7rem);
+    text-align: center;
+    font-weight: bolder;
+    line-height: 3.5rem   ;
+  
+
+    margin-bottom: 5rem;
+}
+.section4 h2{
+    font-family: Reckless;
+    width: 80%;
+    text-align: center;
+    margin: 0rem auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.section4-part2 {
+    width: 80%;
+    margin: 0 auto;
+}
+.images-text {
+    margin-top: 4rem;
+}
+.images-text p{
+    font-size: 0.8rem;
+}
+.section4-img1{
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.section4-img1 img{
+    align-self: center;
+}
+.section4-part2-btn{
+    margin: 4rem auto;
+    width: 100%;
+    text-align: center;
+    background-color: var(--bg_color);
+    color: black;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.section5{
+    width: 100%;
+       height: 80vh;
+}
+.sectiion3-part1{
+    margin-top: 2rem;
+}
+/* ================== Reviews cards ======================= */
+
+.section5-part2-cards{
+    width: 100%;
+    min-height: 50vh;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+.section5-card{
+    height:50vh;
+    width: 90%;
+    background-color: var(--pink-color);
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 1rem;
+}
+.card-outer h1{
+    font-family: Reckless;
+    font-size: 2rem;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 8rem;
+}
+
+.card-outer p{
+    text-align: center;
+    color: rgb(84, 84, 84);
+}
+.card-inner{
+    border: 1px solid black;
+    /* padding: 0.5rem; */
+    border-radius: 10px;
+    background-color: var(--dark-pink-color);
+}
+.small-left-img img{
+    height: 100px;
+    width: 100px;
+    margin-right: 1rem;
+    border-right: 1px solid #000;
+    padding: 0.5rem;
+}
+.right-card-content button{
+    width: 40%;
+    background-color: var(--bg_color);
+    height: 2.7rem;
+    margin: auto 0.5rem;
+    border-radius: 50px;
+    border: 1px solid #000;
+}
+.right-card-content p{
+    text-align: center;
+    margin: auto 0;
+    color: white;
+    font-family: Figtree;
+}
+
+.section5-part2-cards{
+    display: flex;
+}
+.section5-card{
+    flex-shrink: 0;
+   
+}
+.section5-part2-cards{
+    overflow-x: auto;
+}
+
+/* ====================section 6 =========================== */
+.section6{
+         width: 100%;
+}
+.section6-banner-container{
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--btn_color);
+}
+.section6-banner-img{
+    width: 100%;
+    margin: auto 0;
+    
+}
+.description-section6{
+    margin: auto 0;
+    padding: 2rem;
+    background-color: var(--btn_color);
+    color: white;
+}
+.description-section6 h1{
+    font-family: Reckless;
+    font-size: clamp(0.2rem, 2.3vh, 4rem);
+}
+.description-section6 h3{
+    font-family: Roboto;
+    font-size: clamp(0.2rem, 1vh, 4rem);
+}
+.description-section6 button{
+    background-color: var(--bg_color);
+    color: black;
+    width: fit-content;
+    font-size: 0.7rem;
+    padding: 0.4rem;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+/* ==================== sectuin 7 ======================= */
+
+.section7{
+    width: 100%;
+    min-height: 80vh;
+    background-color: #9f6429;
+    padding: 2rem;
+}
+.sectiion3-part1-inner{
+    gap: 1.6rem;
+}
+.sectiion3-part1-inner button{
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.sectiion3-part1-inner h1{
+    margin: 1rem auto;
+    width: 80%;
+    font-family: Reckless;
+    font-weight: 800;
+    font-size: clamp(1.5rem ,5vw,4rem);
+    text-align: center;
+}
+.sectiion3-part1-inner p {
+    text-align: center;
+    color: var(--bg_color);
+}
+
+.section7-part2{
+    margin-top: 6rem;
+    background-color: #ffcb96;
+    height: 64vh;
+}
+.section7-part2 img{
+    position: absolute;
+    right: 7rem;
+    top: -6rem;
+    width: 100%;
+   
+}
+.section7-part2{
+    position: relative;
+     border-radius: 10px;
+}
+.section7-part2-desc{
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+   padding-top: 10rem;
+}
+.section7-part2-desc h1{
+    margin: 0 auto;
+    font-family: Reckless;
+    width: 60%;
+    font-size: clamp(2.8rem,5vw,4rem);
+    line-height: 3rem;
+}
+.section7-part2-desc p{
+    padding: 2rem;
+    font-family: Figtree;
+    font-size: 1.1rem;
+}
+.section7-shopnow-btn button{
+    background-color: var(--bg_color);
+    width: 52%;
+    margin: 0 auto;
+    padding: 0.5rem 0.9rem;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+.section7 .sectiion3-part1-inner button {
+    width: 40%;
+    font-size: 2rem;
+}
+.section7 .sectiion3-part1-inner h1 {
+    font-size: 2.5rem;
+    color: var(--bg_color);
+    font-family: Midnight;
+    line-height: 2.6rem;
+}
+/* ===================== SECTION8 ============================== */
+
+.section8{
+    width: 100%;
+    height: 50vh;
+}
+/* ==================== Section 9 ========================== */
+
+.section9{
+    width: 100%;
+    background-color: #c0dbff;
+    padding: 2rem;
+}
+.section9 .website-contacts h1{
+    font-size: 2rem;
+    font-family: Midnight;
+    font-weight: 700;
+}
+.section9 .website-contacts p{
+    font-family: Reckless;
+    font-size: 1.3rem; 
+    color: rgb(75, 75, 75);  
+}
+.email-btn{
+    padding: 1rem;
+   
+}
+.website-contacts{
+    margin-top: 3rem;
+}
+.email-btn input{
+     background-color: var(--bg_color);
+     padding: 0.6rem;
+     border: 1px solid black;
+     border-radius: 10px;
+     margin-right: 1rem;
+}
+.email-btn button{
+    color: white;
+    background-color: var(--btn_color);
+    padding: 0 2rem;
+    border-radius: 50px;
+}
+.lastline-website{
+    padding: 1rem;
+      margin-top: 3rem !important;
+    text-align: center;
+    font-size: 0.7rem;
+      color: rgb(75, 75, 75);  
+      width: 80%;
+      margin: 0 auto;
+}
+
+.social-media i{
+    font-size: 1.5rem;
+    border: 1px solid black;
+    padding: 0.3rem;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+@media screen and (max-width:940px)   {   /*   mobile    */
+    .part1 .lap{
+        display: none;
+    }
+    .part1 .mob{
+        display: block;
+        width: 100%;
+    }
+    .part3 .lap{
+        display: none;
+    }
+    .main-text-heading{
+        margin-top: 43vh;
+        text-align: center;
+    }
+}
+@media screen and (min-width:720px) {    /* Tablet*/
+    .card{
+        width: 50%;
+    }
+    .section5-card{
+        width: 43.5%;
+        /* height: 60vh; */
+    }
+    .description-section6{
+        gap: 1.5rem;
+    }
+    .description-section6  h1{
+        font-size:2.5rem;
+    }
+    .description-section6  h3{
+        font-size:0.9rem;
+    }
+    .section7-part2 img{
+        width: 70%;
+        left: -10rem;
+    }
+    .section7-part2-desc{
+        padding-top: 20rem;
+    }
+    
+}
+@media screen and (min-width: 940px) {    /*   dextop    */
+     .part1 .mob{
+        display: none;
+    }
+
+    .sectiion3-part1-inner h1{
+        font-size: 4rem !important;
+    }
+    .sectiion3-part1-inner button{
+        width: 20% !important;
+        margin-bottom: 1rem;
+    }
+    .lap{
+        font-size: 0.8rem;
+        font-family: Figtree;
+        font-weight: 400;
+    }
+    .main-text-heading {
+        width: 40%;
+    }
+     .part2{
+        margin-left: 5rem;
+    }
+    .main-text-heading button{
+        width: 50%;
+       margin: 1rem 0;
+    }
+    .main-text-heading {
+        margin-left: 2rem;
+    }
+    .lap{
+        gap: 0.6rem;
+    }
+    .section2-heading{
+        margin-top: 10vh;
+        width: 60%;
+        line-height: 4rem;
+    }
+    .section2-btn-seller{
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+    .card{
+        width: 25%;
+    }
+    .card img{
+       width: 70%;
+       justify-self: center;
+       margin-right: 2rem;
+    }
+    .exploreallteas-btn{
+        width: 30%;
+        margin: 2rem auto;
+    }
+    .sectiion3-part1-inner{
+        width: 80%;
+        margin: 0 auto;
+        
+    }
+    .sectiion3-part1-inner button{
+        width: 20%;
+        height: 50px;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    .sectiion3-part1-inner h1{
+        line-height: 4rem;
+    }
+    .sectiion3-part1 input{
+        width: 40%;
+    }
+    .sectiion3-part2 p{
+        margin-left: 150px;
+    }
+    .section3-btns{
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .section4 h1{
+        margin-top: 2rem;
+        font-size: 5vw;
+        width: 80%;
+        line-height: 7rem;
+    }
+    .section4-part1 button {
+        margin-bottom: 2rem;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+    .section4-part1 h2{
+        width: 70%;
+        font-family: Reckless;
+        font-size: 2rem;
+    }
+    .section4-part2-btn{
+        width: 30%;
+        font-weight: 600;
+    }
+    .section5-card{
+        width: 23.5%;
+        height: 60vh;
+    }
+
+    .section6 {
+        margin-top: 12rem;
+    }
+    .section6-banner-img{
+        width: 30%;
+    }
+
+        .description-section6{
+        gap: 1.5rem;
+    }
+    .description-section6  h1{
+        font-size:3.5rem;
+    }
+    .description-section6  h3{
+        width: 80%;
+        font-size: 1rem;
+    }
+    .description-section6 button{
+        font-size: 1.3rem;
+        padding: 0.5rem;
+    }
+       .description-section6{
+        gap: 1.5rem;
+    }
+    .description-section6  h1{
+        font-size:2.5rem;
+    }
+    .description-section6  h3{
+        font-size:0.9rem;
+    }
+    .section7-part2 img{
+        width: 40%;
+        left:-6rem;
+        top: 2rem;
+    }
+    .section7-part2-desc{   
+        justify-self: end;
+        width: 90%;
+        padding-top: 0rem;
+        padding-left: 20rem;
+        gap: 1rem;
+    }
+    .sectiion3-part1-inner h1{
+        font-size: 2.5rem !important;
+        line-height: 2.6rem;
+    }
+    .website-contacts h1{
+        font-size: 5rem !important;
+    }
+    .website-contacts p{
+        font-size: 2.6rem !important;
+    }
+    .email-btn input{
+        width: 40%;
+        margin-bottom: 3rem;
+        font-size: 1.5rem !important;
+    }
+    .email-btn button{
+        width: 20%;
+        margin-bottom: 3rem;
+        font-size: 1.5rem !important;
+    }
+    .lastline-website{
+        font-size: 1.3rem;
+    }
+}
+
+
+
+/* ===================== Animation ================== */
+
+header{
+    opacity: 0;
+    animation-name: up-to-down;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes up-to-down {
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.nav {
+      animation-name: up-to-down-2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes up-to-down-2 {
+    from{
+        opacity: 0;
+        transform: translateY(-300px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.main-text-heading {
+    opacity: 0;
+    animation-name: down-to-up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes down-to-up {
+    from{
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/* ================== HOVER EFFECTS =============== */
+.main-text-heading button{
+    transition: all ease-in 0.3s;
+}
+.main-text-heading button:hover {
+    background-color: var(--bg_color);
+    font-weight: 600;
+    color: var(--btn_color);
+}
+
+.exploreallteas-btn button{
+    transition: all ease-in 0.3s;
+}
+.exploreallteas-btn button:hover{
+     background-color:var(--green_blue_mix);
+    font-weight: 600;
+    color: var(--btn_color);
+}
+
+.sectiion3-part1-inner input{
+    transition: all ease-in 0.3s;
+}
+.sectiion3-part1-inner input:hover{
+    width: 80%;
+}
+.section3-btns button{
+    transition: all ease-in 0.3s;
+}
+.section3-btns button:hover{
+    background-color: #b3cae9;
+      cursor: pointer;
+    
+}
+
+.section4-part2-btn{
+    transition: all ease-in 0.3s;
+}
+.section4-part2-btn:hover{
+    background-color: var(--btn_color);
+    color: white;
+      cursor: pointer;
+}
+
+.email-btn button{
+    transition: all ease-in 0.3s;
+}
+.email-btn button:hover{
+    background-color: var(--bg_color);
+    color: black;
+      cursor: pointer;
+}
+
+.lap{
+    gap: 1.5rem;
+}
+.lap h3{
+    transition: all ease-in 0.2s;
+}
+.lap h3:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.card-top img{
+    transition: all ease-in 0.3s;
+}
+.card-top:hover img{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.btn-addtocart{
+    transition: all ease-in 0.3s;
+}
+.btn-addtocart:hover{
+    background-color: var(--btn_color);
+    color: white;
+      cursor: pointer;
+}
+.section6-banner-img img{
+transition: all ease-in 0.2s;
+}
+.section6-banner-img img:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.section5-card .card-outer{
+     transition: all ease-in 0.3s;
+}
+.section5-card:hover .card-outer{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.right-card-content button{
+    transition: all ease-in 0.3s;
+}
+.right-card-content button:hover{
+    background-color: var(--btn_color);
+    color: white;
+      cursor: pointer;
+}
+.description-section6 button{
+    transition: all ease-in 0.3s;
+}
+.description-section6 button:hover{
+    background-color: var(--dark-pink-color);
+    color: white;
+      cursor: pointer;
+}
+.section7-shopnow-btn button{
+      transition: all ease-in 0.3s;
+}
+.section7-shopnow-btn button:hover{
+    background-color: #9f6429;
+    color: white;
+      cursor: pointer;
+}
+.social-media i{
+      transition: all ease-in 0.3s;
+}
+.social-media i:hover{
+    background-color: var(--btn_color);
+    cursor: pointer;
+    color: white;
+}
